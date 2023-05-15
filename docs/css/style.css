@@ -128,6 +128,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 20px;
+  margin: 20px;
   border: 1px solid black;
   background-color: green;
   border-radius: 50px;
