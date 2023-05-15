@@ -2,3 +2,88 @@
 @import "vars";
 @import "reset";
 @import "fonts";
+
+
+
+.search {
+    display: flex;
+    justify-content: center;
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+
+
+        padding: 0 10px;
+
+        border-radius: 20px;
+        border: 1px solid black;
+
+        background-color: red;
+    }
+
+    &__input {
+        width: 300px;
+        margin-right: 50px;
+    }
+
+    &__btn {
+        background-color: blue;
+    }
+}
+
+
+.card {
+        display: flex;
+        flex-direction: column;
+        
+        padding: 20px;
+
+        border: 1px solid black;
+        background-color: green;
+        border-radius: 50px;
+    
+    
+    &__main {
+        display: flex;
+        justify-content: space-between;
+
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    &__title {
+    }
+
+    &__img {
+    }
+
+    &__list{
+
+    }
+
+    &__item{
+        margin-left: 16px;
+    }
+
+    &__ingredients {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 20px;
+    }
+
+
+    &__ingredients-use {
+    }
+
+    &__ingredients-useless {
+    }
+
+    &__ingredients-title{
+
+    }
+
+    &__needtobuy {
+    }
+}
