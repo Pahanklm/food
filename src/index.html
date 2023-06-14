@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('html/head.html',{
-"title":"главная"
-})
+    @@include('html/head.html',{ "title":"главная" })
 
-<body>
-	@@include('html/header.html',{})
-	@@include('html/footer.html',{})
-	<script src="js/app.min.js"></script>
-</body>
-
+    <body>
+        @@include('html/header.html',{})
+        <form class="translate__form" action="#" method="get">
+            <input class="translate__form--input" type="text" />
+            <button class="translate__form--btn" type="submit">
+                перевести
+            </button>
+        </form>
+        @@include('html/footer.html',{})
+        <script src="js/app.min.js"></script>
+    </body>
 </html>

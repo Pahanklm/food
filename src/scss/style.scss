@@ -1,9 +1,7 @@
-@import "global";
-@import "vars";
-@import "reset";
-@import "fonts";
-
-
+@import 'global';
+@import 'vars';
+@import 'reset';
+@import 'fonts';
 
 .search {
     display: flex;
@@ -12,7 +10,6 @@
     &__form {
         display: flex;
         justify-content: space-between;
-
 
         padding: 0 10px;
 
@@ -32,19 +29,17 @@
     }
 }
 
-
 .card {
-        display: flex;
-        flex-direction: column;
-        
-        padding: 20px;
-        margin: 20px;
+    display: flex;
+    flex-direction: column;
 
-        border: 1px solid black;
-        background-color: green;
-        border-radius: 50px;
-    
-    
+    padding: 20px;
+    margin: 20px;
+
+    border: 1px solid black;
+    background-color: grey;
+    border-radius: 50px;
+
     &__main {
         display: flex;
         justify-content: space-between;
@@ -53,7 +48,7 @@
         margin-bottom: 50px;
     }
 
-    &__item{
+    &__item {
         margin-left: 16px;
     }
 
@@ -63,4 +58,21 @@
 
         margin-bottom: 20px;
     }
+}
+/* Изменение цвета фона календаря */
+input[type='date']::-webkit-calendar-picker-indicator {
+    background-color: lightblue;
+}
+
+/* Изменение цвета фона и текста дней в календаре */
+input[type='date']::-webkit-calendar-picker-indicator,
+input[type='date']::-webkit-datetime-edit-day-field {
+    background-color: lightblue;
+    color: white;
+}
+
+/* Изменение цвета фона и текста заголовка календаря */
+input[type='date']::-webkit-datetime-edit-fields-wrapper {
+    background-color: lightblue;
+    color: white;
 }

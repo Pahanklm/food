@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 html,
 body {
   height: 100%;
@@ -130,7 +132,7 @@ a {
   padding: 20px;
   margin: 20px;
   border: 1px solid black;
-  background-color: green;
+  background-color: grey;
   border-radius: 50px;
 }
 
@@ -157,4 +159,25 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 20px;
+}
+
+/* Изменение цвета фона календаря */
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  background-color: lightblue;
+}
+
+/* Изменение цвета фона и текста дней в календаре */
+
+input[type=date]::-webkit-calendar-picker-indicator,
+input[type=date]::-webkit-datetime-edit-day-field {
+  background-color: lightblue;
+  color: white;
+}
+
+/* Изменение цвета фона и текста заголовка календаря */
+
+input[type=date]::-webkit-datetime-edit-fields-wrapper {
+  background-color: lightblue;
+  color: white;
 }
